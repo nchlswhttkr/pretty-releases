@@ -1,5 +1,5 @@
 {
   "version": 2,
   "regions": ["all"],
-  "rewrites": [{ "source": "/releases/(.+)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/(.+)", "destination": "/index.html" }]
 }

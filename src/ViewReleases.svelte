@@ -19,9 +19,6 @@
 </script>
 
 <style>
-  .root {
-    padding: 16px;
-  }
   .release {
     background-color: #fff;
     padding: 20px;
