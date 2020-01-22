@@ -15,11 +15,6 @@
     page++;
     updatePath();
   }
-
-  function navigateHome(event) {
-    event.preventDefault();
-    nav("/");
-  }
 </script>
 
 <style>
@@ -34,7 +29,8 @@
   }
 
   .main {
-    padding: 0 16px;
+    box-sizing: border-box;
+    padding: 0 16px 16px;
   }
 </style>
 
@@ -43,7 +39,7 @@
 {#if path !== '/'}
   <nav class="nav">
     <p>
-      <a on:click={navigateHome} href="/">{'< Home'}</a>
+      <a on:click|preventDefault={() => nav('/')} href="/">{'< Home'}</a>
     </p>
   </nav>
 {/if}
